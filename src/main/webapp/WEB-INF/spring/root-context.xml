@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+	<context:property-placeholder location="/config/*.properties" />  
+	<!-- 혹시 properties 파일이 더 있을까봐 -->
+		
+	<!-- HikariConfig (urf -> jdbcUrl)-->
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<property name="driverClassName" value="${spring.hikariConfig.driverClassName}" />
+		<property name="jdbcUrl" value="${spring.hikariConfig.jdbcUrl}" />
+		<property name="username" value="${spring.hikariConfig.username}" />
+		<property name="password" value="${spring.hikariConfig.password}" />
+	</bean>
+	
+	<!-- HikariDataSource -->
+	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+		<constructor-arg ref="hikariConfig"/>
+	</bean>
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mapperLocations" value="classpath:com/koreait/project/**/*.xml" />
+	</bean>
+	
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+	
+	
+	<!-- 파일업로드용 : multipartResolver -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+		<property name="defaultEncoding" value="utf-8" />
+		<property name="maxUploadSize" value="10485760" /> <!-- 10MB(10485760)  = 1024 * 1024 * 10 byte -->
+	</bean>
+	
+	<!-- 이메일 인증 : mailSender -->
+	<!-- 1. 메일을 보내는 계정은 "구글" 계정이어야만 합니다. -->
+	<!-- 2. 메일을 받는 계정은 모두 가능합니다. -->
+	<!-- 3. 정상적인 동작을 위해서 "구글 로그인" -> "보안 수준이 낮은 앱 허용"을 허용해야 합니다. -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="587" />
+		<property name="username" value="보내는 사람 이메일" />
+		<property name="password" value="보내는 사람의 이메일 비번" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+			</props>
+		</property>
+	</bean>
+<!-- 
+********* 위의 내용은 고정 내용들이므로 건들지 마세요!**********
+혹시 추가할 사항있다면 팀원들과 상의 후 업데이트바랍니다.
+-->
+	
+		
+	<!-- COMMAND -->
+	<!-- 이 부분에 모든 command 을 넣어주세요. command 추가 시 노션입력,commit할때 메모 부탁드립니다. -->
+	<!-- 아시다시피 dao는 interface를 추가로 만들어서 활용할 것이기에 넣지 않습니다. -->	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</beans>

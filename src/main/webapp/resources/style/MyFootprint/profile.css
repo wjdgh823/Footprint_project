@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+
+
+#profile_title {
+	font-family: '나눔고딕';
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.profile_content_all {
+	display: flex;
+	margin-top: 100px;
+}
+
+.profile_left_box {
+	border: 1px solid white;	
+}
+
+.profile_left_box_1 {
+	border: 1px solid lightgray;
+	width: 480px;
+	height: 450px;
+	text-align: center;
+	padding: 85px 0px;
+}
+
+#profile_left_box_1_circle {
+	border-radius: 120px;
+	background: lightgray;
+	width: 150px;
+	height:150px;
+	display: inline-block;
+}
+
+#profile_left_box_1_name{
+	margin-top: 20px;
+	font-weight: 700;
+}
+
+#profile_left_box_1_btn {
+	margin-top: 50px;
+	font-size: 18px;
+}
+
+.profile_left_box_2 {
+	padding: 10px;
+	border: 1px solid lightgray;
+	width: 480px;
+	height: 250px;
+}
+
+.profile_right_box {
+	margin-left: 50px;
+	border: 1px solid lightgray;	
+	width: 1200px;
+	height: 1300px;
+}
+/* 왼쪽 박스의 아래  */
+.profile_left_box_2_content1 {
+	padding: 20px 30px;
+}
+
+.profile_left_box_2_content1 > span {
+	font-size: 28px;
+	font-family: '나눔손글씨 붓';
+}
+
+.profile_left_box_2_content1 > input {
+	float: right;
+	margin-top: 30px;
+	border: none;
+	border-radius: 60px;
+	background: lightgray;
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	
+}
+
+.profile_left_box_2_content2 {
+	font-size: 20px;
+	padding: 20px 30px
+}
+
+.profile_left_box_2_content2 > a {
+	float: right;
+	font-weight: 700;
+}
+
+.profile_left_box_2_content3 {
+	font-size: 20px;
+	padding: 20px 30px
+}
+
+.profile_left_box_2_content3 > a {
+	float: right;
+	font-weight: 700;
+}
+
+/* 오른쪽 박스 */
+.profile_right_box {
+	padding: 70px 100px;
+}
+
+#profile_right_box_update {
+	float: right;
+	margin-left: 1000px;
+	font-size: 18px;
+	font-weight: 700;
+	width: 100px;
+	height: 50px;
+	border: 1px solid lightgray;
+	text-align: center;
+	line-height: 50px;
+}
+
+#profile_right_box_circle_name {
+	text-align: center;
+}
+
+#profile_right_box_circle {
+	margin-top: 0px;
+	display: inline-block;
+	background: lightgray;
+	border-radius: 100px;
+	width: 150px;
+	height: 150px;
+	margin-bottom: 30px;
+}
+
+/* 이름 부분 */
+.profile_right_box_name_box {
+	margin-top: 110px;
+	font-weight: 700;
+}
+
+.profile_right_box_name_box > div {
+	display: inline-block;
+	width: 200px;
+}
+
+
+/* 이메일 부분 */
+.profile_right_box_email_box {
+	margin-top: 90px;
+	font-weight: 700;
+}
+
+.profile_right_box_email_box > div:nth-of-type(1) {
+	display: inline-block;
+	width: 200px;
+}
+.profile_right_box_email_box > div:nth-of-type(2) {
+	display: inline-block;
+	width: 350px;
+}
+.profile_right_box_email_box > div:nth-of-type(3) {
+	display: inline-block;
+	width: 200px;
+	color: lightgray;
+}
+
+/* 연락처 부분 */
+.profile_right_box_contact_box {
+	margin-top: 90px;
+	font-weight: 700;
+}
+
+.profile_right_box_contact_box > div:nth-of-type(1) {
+	display: inline-block;
+	width: 200px;
+}
+.profile_right_box_contact_box > div:nth-of-type(2) {
+	display: inline-block;
+	width: 350px;
+}
+.profile_right_box_contact_box > div:nth-of-type(3) {
+	display: inline-block;
+	width: 200px;
+	color: lightgray;
+}
+
+/* sns 연동 부분 */
+.profile_right_box_sns_box {
+	margin-top: 90px;
+	font-weight: 700;
+}
+
+/* kakao */
+.profile_right_box_kakao_box > div:nth-of-type(1) {
+	display: inline-block;
+	width: 200px;
+}
+.profile_right_box_kakao_box > div:nth-of-type(2) {
+	display: inline-block;
+	width: 350px;
+}
+.profile_right_box_kakao_box > div:nth-of-type(3) {
+	margin-left: 345px;
+	display: inline-block;
+	color: lightgray;
+}
+
+/* facebook */
+.profile_right_box_facebook_box > div:nth-of-type(1) {
+	display: inline-block;
+	width: 200px;
+	margin-top:50px;
+}
+.profile_right_box_facebook_box > div:nth-of-type(2) {
+	display: inline-block;
+	width: 350px;
+}
+.profile_right_box_facebook_box > div:nth-of-type(3) {
+	display: inline-block;
+	margin-left: 345px;
+	color: lightgray;
+}
+
+/* naver */
+.profile_right_box_naver_box > div:nth-of-type(1) {
+	display: inline-block;
+	width: 200px;
+	margin-top:50px;
+}
+.profile_right_box_naver_box > div:nth-of-type(2) {
+	display: inline-block;
+	width: 350px;
+}
+.profile_right_box_naver_box > div:nth-of-type(3) {
+	display: inline-block;
+	margin-left: 345px;
+	color: lightgray;
+}
+
+/* 비밀번호  */
+.profile_right_box_password_box {
+	margin-top: 90px;
+	font-weight: 700;
+}
+.profile_right_box_password_box > div:nth-of-type(1) {
+	display: inline-block;
+	width: 200px;
+}
+.profile_right_box_password_box> div:nth-of-type(2) {
+	display: inline-block;
+	width: 350px;
+}
+
+/* 마케팅 수신 동의  */
+.profile_right_box_marketing_box {
+	margin-top: 90px;
+	font-weight: 700;
+}
+.profile_right_box_marketing_box > div:nth-of-type(1) {
+	display: inline-block;
+	width: 200px;
+}
+
+
+

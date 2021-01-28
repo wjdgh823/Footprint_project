@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+	font-family: '나눔고딕';
+}
+
+.select2_content_all {
+	display: flex;
+	justify-content: center;
+	margin-top: 240px;
+}
+
+.select2_distance, .select2_time {
+	margin-left: 100px;
+}		
+
+.select2_emotion > input, .select2_distance > input, .select2_time > input {
+	border: 0px;
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 80px;
+	font-size: 20px;
+	font-weight: 700;
+	
+}
+
+.select2_emotion_info > li, .select2_distance_info > li, .select2_time_info > li {
+	font-size: 20px;
+}
+
+.select2_emotion_info, .select2_distance_info, .select2_time_info {
+	margin-bottom: 30px;
+}
+
+.select2_emotion > input:hover {
+	background: black;
+	color: white;
+}
+
+.select2_distance > input:hover {
+	background: black;
+	color: white;
+}
+
+.select2_time > input:hover {
+	background: black;
+	color: white;
+}
+
+
+
+
+
+
+
+

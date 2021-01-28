@@ -26,7 +26,7 @@
 				<div class="head-logo">
 					<!-- 로고 -->
 					<a href="">
-						<img alt="FootPrint" src="resources/images/footprint.png" id="logo" style="width:80px; float:left" />
+						<img alt="FootPrint" src="resources/images/footprint.png" id="logo" style="width:35px; float:left" />
 					</a>
 				</div>
                <div class="right_header_wrap">

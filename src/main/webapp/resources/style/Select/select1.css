@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* select 부분 css */
+
+body {
+	font-family: '나눔고딕';
+}
+
+.select1_content_all {
+	display: flex;
+	justify-content: center;
+	margin-top:240px;
+}
+
+.select1_select_content {
+	margin-left: 100px;
+}
+
+.select1_select_content > input, .select1_random_content > input {
+	border: 0px;
+	width: 400px;
+	height: 120px;
+	line-height: 120px;
+	border-radius: 80px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.select1_button_info > li {
+	padding:4px 0px;
+	font-size: 24px;
+}
+
+.select1_button_info {
+	margin-top: 35px;
+}
+
+.select1_random_content > input:hover {
+	background: black;
+	color: white;
+}
+
+.select1_select_content > input:hover {
+	background: black;
+	color: white;
+}
+

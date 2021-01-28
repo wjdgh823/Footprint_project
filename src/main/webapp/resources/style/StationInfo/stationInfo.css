@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+	
+	.totalBoxSizing {
+		margin-top:100px;
+		margin-left: 250px;
+		margin-right: 200px;
+	}
+	#station_name {
+		font-size: 22px;
+		font-weight: bold;
+	}
+	#review_ranking {
+		margin-top: 10px;
+		font-size: 10px;
+	}
+	.theme_search {
+		text-align: center;
+	}
+	#search {
+		width: 400px;
+		padding: 10px;
+		border: 2px solid #939393;
+		color: #939393;
+		border-radius: 20px;
+	}
+
+	#save_and_share {
+		text-align: right;
+		font-size: 12px;
+	}
+	
+	.bodySection {
+		position: relative;
+		margin: 0;
+		padding-top: 20px;
+		width: 100%;
+		display: flex;
+	}
+	.sideMenuContainer {
+		width: 20%;
+	}
+	.themeList {
+		list-style: none;
+		padding: 0;
+	}
+	.subThemeList {
+		width: 100%;
+		padding: 10px;
+		padding-left: 20px;
+		margin-bottom: 7px;
+		border: 1px solid #939393;
+		border-radius:30px;
+		text-align: left;
+		font-size:12px;
+		font-weight: bold;
+	}
+	.subThemeList a {
+		color: #939393;
+	}
+	a {
+		text-decoration: none;
+	}
+	.mainSection {
+		padding-bottom: 10px;
+		text-align: center;
+		margin-left: 100px;
+		margin-top: 20px;
+		width: 75%;
+	}
+	.mainTopPart {
+		margin: 0;
+		padding-bottom: 20px;
+	}
+	#sub_title {
+		position: absolute;
+		float: left;
+		margin-bottom: 20px;
+		font-size: 12px;
+		font-weight: bold;
+		
+	}
+	#selection {
+		float: right;
+		margin: 0;
+	}
+	.mainContentsList {
+		padding: 0;
+		list-style: none;
+	}
+	.subMainContentsList {
+		padding: 0;
+		margin-bottom: 10px;
+		border: 1px solid gray;
+		height: 170px;
+	}

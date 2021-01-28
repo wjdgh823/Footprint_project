@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+body {
+	font-family: '나눔고딕';
+}
+
+.select3_content_all {
+	margin-top: 180px;
+}
+
+.query_line_station {
+	display:flex;
+	border:6px solid black;
+	width:800px;
+	height: 100px;
+	border-radius: 80px;
+	margin: 0px auto;
+}
+
+.select3_content_all > div:nth-of-type(2) {
+	margin-bottom:80px;
+}
+
+
+.select3_content_all > div:nth-of-type(1),
+.select3_content_all > div:nth-of-type(2) {
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.select3_content_all > div:nth-of-type(1),
+.select3_content_all > div:nth-of-type(2) {
+	text-align: center;
+}
+
+input[type=button] {
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+	background: black;
+	color: white;
+	border: none;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+input[type=text] {
+	width: 320px;
+	height:30px;
+	border: none;
+	font-size: 18px;
+	color: gray;
+}
+
+.line_box {
+	margin-left:40px;
+}
+
+.station, .line {
+	font-size:18px;
+	font-weight: 800;
+	margin-top: 22px;
+}
+
+.station {
+	margin-left: 5px;
+}
+
+#station_box {
+	margin-left: 5px;
+}
+
+.query_line_station,
+#select3_spot {
+	justify-content: center;
+}
+
+.select3_look_line {
+	margin-left:1400px;
+}
+
+label {
+	font-size: 18px;
+}
+
+
+#select3_spot {
+	display: flex;
+}
+
+#select3_spot > li:nth-of-type(2) {
+	margin-left: 1200px;
+	justify-content: center;
+}

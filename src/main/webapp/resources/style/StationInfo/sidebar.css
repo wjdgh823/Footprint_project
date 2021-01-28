@@ -1,0 +1,93 @@
+@charset "UTF-8";
+	*{
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    text-decoration: none;
+	}
+	
+	.sideMenuBar_wrapper{
+		padding: 10px;
+	    position: fixed;
+	    border-spacing: 100%
+	    
+	}
+	.mainMenu{
+	    width: 100px;
+	    display: block;
+	    overflow: hidden;
+	    text-align: center;
+	}
+	.mainMenuBar{
+	    border-top: 1px solid #fff;
+	    overflow: hidden;
+	}
+	.side_mainMenu_btn{
+	    display: block;
+	    padding: 15px 20px;
+	    color: #fff;
+	    position: relative;
+	    background: #303030;
+	    font-weight: bold;
+	
+	}
+	.side_mainMenu_btn:before{
+	    position: absolute;
+	    width: 0;
+	    height: 0;
+	    right: 15px;
+	    bottom: -10px;
+	    z-index: 9;
+	    
+	}
+	.side_subMenu_btn{
+	    background: #fff;
+	    overflow: hidden;
+	    transition: max-height 0.7s;
+	    max-height: 0;
+	}
+	.side_subMenu_btn a{
+	    display: block;
+	    padding: 15px 20px;
+	    color: black;
+	    font-size: 14px;
+	    border-bottom: 1px solid silver;
+	    position: relative;
+	    
+	}
+	.side_subMenu_btn a:before{
+	    opacity: 0;
+	    transition: opacity 0.3s;
+	
+	}
+	.side_subMenu_btn a:hover:before{
+	    position: absolute;
+	    height: 0;
+	    width: 6px;
+	    left: 0;
+	    top:0;
+	    opacity: 1;
+	}
+	.side_subMenu_btn a:after{
+	    opacity: 0;
+	    transition: opacity 0.3s;
+	
+	}
+	.side_subMenu_btn a:hover:after{
+	    position: absolute;
+	    height: 0;
+	    width: 6px;
+	    right: 0px;
+	    top:0;
+	    opacity: 1;
+	}
+	.side_subMenu_btn a:hover{
+	    transition: all 0.3s;
+	    border-bottom: 1px solid #394c7f;
+	}
+	.side_subMenu_btn a:last-child{
+	    border:none;
+	}
+	.mainMenuBar:target .side_subMenu_btn{
+	    max-height: 10em;
+	}

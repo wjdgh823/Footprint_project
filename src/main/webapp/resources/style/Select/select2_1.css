@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+	font-family: '나눔고딕';
+}
+
+p {
+	font-size: 42px;
+	font-weight: 800;
+}
+
+.select2_1_content_all {
+	text-align: center;
+	margin-top:180px;
+}
+
+.select2_1_mood > input[type=range] {
+	width: 1200px;
+	border-radius: 200px;
+	margin-top: 100px;
+	border: none;
+}
+
+.select2_1_mood > input[type=range]::-ms-fill-lower {
+	background: black;
+}
+
+.select2_1_mood > input[type=range]::-ms-track {
+	height:35px;
+	border-color: transparent;
+	color: transparent;
+
+}
+
+#select2_1_mood  {
+	display: flex;
+	justify-content: center;
+}
+
+
+#select2_1_mood > li:nth-of-type(2), #select2_1_mood >li:nth-of-type(3),#select2_1_mood >li:nth-of-type(4),#select2_1_mood >li:nth-of-type(5) {
+	margin-left: 250px;
+}
+
+#select2_1_mood > li:nth-of-type(n) {
+	margin-top: 20px;
+}
+	
+	
+#select2_1_mood > li {
+	font-size: 24px;
+}
+
+.select2_1_random_btn > input {
+	margin-top: 100px;
+	border: 0px;
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 80px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.select2_1_random_btn > input:hover {
+	color: white;
+	background: black;
+}

@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: ljh03
+=======
+Built-By: iambo
+>>>>>>> 4caa6610c169e06399d4c3ee4985e1595669d1d2
 Build-Jdk: 1.8.0_202
 Created-By: Maven Integration for Eclipse
 
